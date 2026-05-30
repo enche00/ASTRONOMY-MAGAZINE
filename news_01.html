@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NEWS01</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NEED MORE CA+SH</strong> by lec jsy</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Axiom Space 민간 우주 비행사, 국제 우주 정거장으로 향하다</h1>
+									</header>
+									
+                                    <span class="image main"><img src="images/pic0a.jpg" alt="" /></span>
+
+                                    <p>4명의 개인 우주비행사가 국제우주정거장에 대한 두 번째 개인 우주비행사 임무인 Axiom Mission 2(Ax-2)의 성공적인 발사에 이어 궤도에 진입했습니다. Axiom Space 우주비행사들은 5월 21일 일요일 오후 5시 37분 EDT에 플로리다에 있는 NASA 케네디 우주 센터의 발사 단지 39A에서 이륙했습니다.</p>
+                                    <p>SpaceX Falcon 9 로켓은 Ax-2 승무원 Peggy Whitson 사령관, 파일럿 John Shoffner, 임무 전문가 Ali Alqarni 및 Rayyanah Barnawi를 태운 회사의 Dragon 우주선을 우주에서 과학 연구, 봉사 활동 및 상업 활동을 수행하는 임무를 수행하기 위해 궤도에 진입시켰습니다. </p>
+                                    <p>“Axiom, SpaceX 및 Axiom Mission 2 승무원의 성공적인 발사를 축하합니다! Ax-2 우주 비행사는 국제 우주 정거장에 탑승하는 동안 20개 이상의 과학 실험을 수행하여 우주 방사선, 저중력 조건의 날씨 등을 더 잘 이해하는 데 도움을 줄 것입니다.”라고 NASA 관리자 Bill Nelson이 말했습니다. "이 임무는 업계 파트너가 차세대 우주 기술을 개발하고 성장하는 상업 우주 경제를 지원하도록 지원하려는 NASA의 약속에 대한 증거입니다."</p>
+                                    <p>5월 22일 월요일 오전 7시 30분부터 NASA는 NASA TV, NASA 앱 및 기관 웹사이트 에서 SpaceX Dragon 도킹, 해치 개방 및 승무원 환영 행사에 대한 생중계를 제공할 예정입니다 .</p>
+                                    <p>Axiom Space 우주비행사들은 5월 30일 날씨에 따라 우주정거장을 출발하여 지구로 돌아와 플로리다 해안에 착륙할 예정입니다.</p>
+
+                                    <h3>>comment</h3>
+									<body>
+										<form>
+										  <!-- <input type="text" id="name" name="name" placeholder="Name" required><br> -->
+										  <textarea id="comment" name="comment" placeholder="Enter your message" rows="6" required></textarea><br>
+										  <input type="submit" value="Send Message" class="primary">
+										</form>
+									  
+									  
+										<script>
+										  	document.querySelector('form').addEventListener('submit', function(event) {
+											event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+									  
+											var name = document.getElementById('name').value;
+											var comment = document.getElementById('comment').value;
+									  
+											// 새로운 댓글을 생성하고 commentList에 추가
+											var newComment = document.createElement('div');
+											newComment.innerHTML = '<strong>' + name + '</strong>: ' + comment;
+											document.getElementById('commentList').appendChild(newComment);
+									  
+											// 작성된 댓글을 초기화
+											document.getElementById('name').value = '';
+											document.getElementById('comment').value = '';
+										  });
+										</script>
+									  </body>
+
+								</section>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

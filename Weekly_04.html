@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>주간탐사</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NEED MORE CA+SH</strong> by lec jsy</a>
+									
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>주간탐사</h1>
+									</header>
+									
+									<h2>Topic : 우주는 균일하게 팽창하지 않는다?</h2>
+									<span class="image main"><img src="images/picW.jpg" alt="" /></span>
+
+                                    <p>천문학자들은 수십 년 동안 우주가 모든 방향에서 같은 속도로 팽창하고 있다고 추정해왔다. 그러나 유럽과 미국 과학자들로 이뤄진 국제연구팀의 새로운 관측 데이터는 이 우주론의 핵심 전제가 틀릴 수도 있음을 시사한다.</p>
+                                    <p>독일 본 대학의 천체물리학자인 콘스탄티노스 미그카스(Konstantinos Migkas) 박사와 토머스 레이프리치(Thomas Reiprich) 박사는 천문학의 기본 토대인 소위 등방성 가설(isotropy hypothesis)을 시험할 수 있는 새로운 방법을 검증하기 시작했다.</p>
+                                    <p>등방성 가설에 따르면, 우주는 약간의 국지적 차이에도 불구하고, 대규모로 각 방향에서 동일한 속성을 가지고 있다.</p>
+                                    <p>기초적인 물리학으로 널리 받아들여진 이 가설은 우주 마이크로파 배경(CMB)의 관측에 의해 뒷받침됐다. 빅뱅의 직접적인 잔해인 CMB는 빅뱅 이후 38만 년의 초기 우주 상태를 반영한다. CMB가 하늘에 균일하게 분포한 것은 그 초창기에 우주가 모든 방향에서 같은 속도로 빠르게 팽창하고 있었음이 분명하다.</p>
+                                    <p>그러나 오늘날의 우주에서는 이것이 더 이상 사실이 아닐 수도 있다. 콘스탄티노스는 본 대학 및 하버드 대학 동료들과 함께 800개가 넘는 은하단(galaxy cluster) 활동을 조사했다.</p>
+                                    <p>콘스탄티노스 박사는 “등방성 가설이 맞다면 은하단의 성질은 균일해야 하지만, 실제로 상당한 차이를 보았다.”고 말했다.</p>
+                                    <p>천문학자들은 은하단에 퍼져 있는 극도로 뜨거운 가스의 X선 온도 측정치를 사용하여 은하단이 하늘에서 얼마나 밝게 보이는지 비교했다. 온도가 동일하고 유사한 거리에 위치한 은하단은 비슷하게 밝게 표시되어야 한다. 그러나 천문학자들이 관찰한 것은 전혀 달랐다.</p>
+                                    <P>토마스 교수는 “같은 성질을 가진 은하단은 온도가 비슷한데, 하늘의 한 방향에서 우리가 기대하는 것보다 밝지 않고, 다른 방향에서는 예상보다 밝은 것으로 나타났다”고 말했다. 차이가 30%나 될 정도로 꽤 컸다. 이런 차이는 무작위가 아니라 하늘에서 관찰한 방향에 따라 일정한 패턴을 드러냈다.</P>
+									
+									<h3>> Write your comment!</h3>
+									<body>
+										<form>
+										  <input type="text" id="name" name="name" placeholder="Name" required><br>
+										  <textarea id="comment" name="comment" placeholder="Enter your message" rows="6" required></textarea><br>
+										  <input type="submit" value="Send Message" class="primary">
+										</form>
+									  
+										<h3>> Comment List</h3>
+									  
+										<div id="commentList">
+										  <!-- 여기에 댓글이 동적으로 추가될 예정 -->
+										</div>
+									  
+										<script>
+										  	document.querySelector('form').addEventListener('submit', function(event) {
+											event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+									  
+											var name = document.getElementById('name').value;
+											var comment = document.getElementById('comment').value;
+									  
+											// 새로운 댓글을 생성하고 commentList에 추가
+											var newComment = document.createElement('div');
+											newComment.innerHTML = '<strong>' + name + '</strong>: ' + comment;
+											document.getElementById('commentList').appendChild(newComment);
+									  
+											// 작성된 댓글을 초기화
+											document.getElementById('name').value = '';
+											document.getElementById('comment').value = '';
+										  });
+										</script>
+									  </body>
+
+								</section>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

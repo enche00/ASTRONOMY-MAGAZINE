@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NEWS02</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NEED MORE CA+SH</strong> by lec jsy</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>CAPSTONE, Moon Shot 촬영, 내비게이션 기술 테스트 성공</h1>
+									</header>
+									
+                                    <span class="image main"><img src="images/pic0b.jpg" alt="" /></span>
+
+                                    <p>CAPSTONE은 지난 5월 처음으로 지구의 GPS와 유사한 내비게이션 기술을 성공적으로 테스트하여 미래의 우주 임무가 달에서 보다 효율적으로 탐색하는 데 도움이 될 수 있는 기능을 발전시켰습니다. 우주선은 또한 5월 3일 CAPSTONE이 달에 근접 접근하면서 달의 북극 근처 달 표면을 보여주는 달의 첫 번째 이미지를 포착했습니다.</p>
+                                    <p>Cislunar Autonomous Positioning System Technology Operations and Navigation Experiment의 줄임말인 CAPSTONE은 전자레인지 크기의 CubeSat으로 달에서 고유한 타원형 궤도를 비행하며 Gateway 에서 사용할 예정입니다 . 미션의 CAPS 기술 테스트에는 2개의 우주선인 CAPSTONE과 NASA의 Lunar Reconnaissance Orbiter가 포함되었습니다.(로). 5월 9일 실험 동안 CAPSTONE은 두 우주선 사이의 거리와 상대 속도를 측정하도록 설계된 LRO에 신호를 보냈습니다. 그런 다음 LRO는 신호를 CAPSTONE으로 반환하여 측정값으로 변환했습니다. 이 테스트는 두 우주선의 위치를 ​​결정하기 위해 CAPS 소프트웨어가 활용할 측정값을 수집하는 능력을 입증했습니다. 이 기능은 미래의 달 임무를 위한 자율적인 온보드 탐색 정보를 제공할 수 있습니다.</p>
+                                    <p>성공적인 CAPS 테스트 외에도 CAPSTONE은 최소 6개월 동안 거의 직선에 가까운 헤일로 궤도를 비행하는 또 다른 임무 목표를 달성했습니다. 이것은 우주선의 주요 임무의 끝을 의미하며 CAPSTONE은 향상된 임무 단계에서 최대 1년 동안 궤도를 계속 비행하고 탑재 기술을 테스트할 것입니다.</p>
+
+                                    <h3>>comment</h3>
+									<body>
+										<form>
+										  <!-- <input type="text" id="name" name="name" placeholder="Name" required><br> -->
+										  <textarea id="comment" name="comment" placeholder="Enter your message" rows="6" required></textarea><br>
+										  <input type="submit" value="Send Message" class="primary">
+										</form>
+									  
+									  
+										<script>
+										  	document.querySelector('form').addEventListener('submit', function(event) {
+											event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+									  
+											var name = document.getElementById('name').value;
+											var comment = document.getElementById('comment').value;
+									  
+											// 새로운 댓글을 생성하고 commentList에 추가
+											var newComment = document.createElement('div');
+											newComment.innerHTML = '<strong>' + name + '</strong>: ' + comment;
+											document.getElementById('commentList').appendChild(newComment);
+									  
+											// 작성된 댓글을 초기화
+											document.getElementById('name').value = '';
+											document.getElementById('comment').value = '';
+										  });
+										</script>
+									  </body>
+
+								</section>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

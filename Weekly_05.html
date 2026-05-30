@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>주간탐사</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NEED MORE CA+SH</strong> by lec jsy</a>
+									
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>주간탐사</h1>
+									</header>
+									
+									<h2>Topic : 우리가 사는 우주 너머 다른 우주 있을까?</h2>
+									<span class="image main"><img src="images/picE.png" alt="" /></span>
+
+                                    <p>우주는 우리의 모든 상상을 초월할 정도로 광대하다. 수조 개의 은하는 각각 수천억 개의 별을 포함하며, 온 우주의 별 수는 지구상의 모래알보다 약 10배나 많다. 현재까지 밝혀진 우주의 크기는 약 940억 광년에 이르는데, 인간의 척도로 볼 때 이는 거의 무한대라 할 수 있는 크기다.</p>
+                                    <p>그런데 이처럼 광대한 우리 우주 외에도 다른 우주들이 존재한다고 주장하는 사람들이 있다. 그런 우주를 다중우주라 하며, 그런 주장을 다중우주 해석이라 한다. 그들의 주장에 따르면, 다른 우주가 존재하지만 우리 우주와는 아무런 인과관계가 없으며, 관측이나 소통도 전혀 불가능하다고 한다. 여기서 말하는 다중우주는 일반적으로 여러 개의 우주가 있다는 이론이고, 평행우주는 동일한 차원의 우주만을 의미한다.</p>
+                                    <p>다중우주론자들은 우주의 지평선 너머에 우리 우주와는 또 다른 우주가 밤하늘 별처럼 셀 수 없을 정도로 존재한다는 가설을 내놓고 있다. 그들은 우리 우주도 하나의 거품 형태로 존재한다고 보며, 그런 거품이 수도 없이 많다는 것이다. 그리고 각각의 우주는 따로 분리되어 있기는 하지만 물리법칙은 엇비슷하다고 가정한다. 우리 우주는 터무니없이 다양한 속성을 갖고 있는 엄청나게 많은 우주 중의 하나에 불과하며, 우리가 살고 있는 특정 우주의 가장 기본적인 속성 중 일부는 그저 우주의 주사위를 무작위로 내던져서 나온 우연의 결과일 뿐이라는 것이 다중우주론의 핵심 개념이다.</p>									
+									
+									<h3>> Write your comment!</h3>
+									<body>
+										<form>
+										  <input type="text" id="name" name="name" placeholder="Name" required><br>
+										  <textarea id="comment" name="comment" placeholder="Enter your message" rows="6" required></textarea><br>
+										  <input type="submit" value="Send Message" class="primary">
+										</form>
+									  
+										<h3>> Comment List</h3>
+									  
+										<div id="commentList">
+										  <!-- 여기에 댓글이 동적으로 추가될 예정 -->
+										</div>
+									  
+										<script>
+										  	document.querySelector('form').addEventListener('submit', function(event) {
+											event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+									  
+											var name = document.getElementById('name').value;
+											var comment = document.getElementById('comment').value;
+									  
+											// 새로운 댓글을 생성하고 commentList에 추가
+											var newComment = document.createElement('div');
+											newComment.innerHTML = '<strong>' + name + '</strong>: ' + comment;
+											document.getElementById('commentList').appendChild(newComment);
+									  
+											// 작성된 댓글을 초기화
+											document.getElementById('name').value = '';
+											document.getElementById('comment').value = '';
+										  });
+										</script>
+									  </body>
+
+								</section>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
